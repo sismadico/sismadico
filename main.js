@@ -2,7 +2,7 @@ var config = {
   apiKey: "AIzaSyDMtLsGZJ4chxuUYwQeBUe6FIxUNmKZxcg",
   authDomain: "fir-68c98.firebaseapp.com",
   databaseURL: "https://fir-68c98.firebaseio.com",
-  storageBucket: "fir-68c98.appspot.com",
+  storageBucket: "",
 };
 
 firebase.initializeApp(config);
@@ -72,10 +72,10 @@ reviews.addEventListener('click', (e) => {
 });
 
 function reviewTemplate({fullName, message}) {
-  return '
+  return `
     <div class='fullName'>${fullName}</div>
     <div class='message'>${message}</div>
     <button class='delete'>Delete</button>
     <button class='edit'>Edit</button>
-  '
+  `
 };
