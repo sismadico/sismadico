@@ -72,10 +72,10 @@ reviews.addEventListener('click', (e) => {
 });
 
 function reviewTemplate({fullName, message}) {
-  return `
-    <div class='fullName'>${fullName}</div>
-    <div class='message'>${message}</div>
-    <button class='delete'>Delete</button>
-    <button class='edit'>Edit</button>
-  `
+  return '
+    <div class="fullName">${fullName}</div>
+    <div class="message">${message}</div>
+    <button class="delete">Delete</button>
+    <button class="edit">Edit</button>
+  '
 };
