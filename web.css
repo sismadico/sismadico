@@ -8,7 +8,9 @@
 body{
   background: #1D5C7C;
 }
+
 .hide{display: none;}
+.orange{color:#FFA500;}
 .img{width: 100%; height: auto;}
 img{
   height: 72px;

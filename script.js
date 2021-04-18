@@ -3,7 +3,7 @@ front:function(){
 out  ='<div class="s-12 l-1 " id="header">.</div>';
 out +='<div class="s-12 l-10 " id="body" >';
 out +='<div class="s-12 l-12 " id="page1">';
-out +='<div class="kiri" ><span class="">sismadi.co.id</span></div>';
+out +='<div class="kiri" ><span class="">sismadi</span><span class="orange">.co.id</span></div>';
 out +='<div class="kanan" ></div>';
 out +='</div>';
 out +='<div class="s-12 l-12 " id="page2">';
@@ -44,7 +44,7 @@ download \
 '<span class="judul">News & Events</span><br> \
 Sistem Informasi Dagang Berbasis Web <hr> \
 Kami siap membantu membuat program yang disesuaikan dengan kebutuhan usaha anda.',
-'<span class="judul">Selamat Datang di stokbarang.org</span><br> \
+'<span class="judul">Selamat Datang di sismadi.co.id</span><br> \
 Program Toko dan Gudang. <hr>\
 Program stokbarang adalah aplikasi database untuk distributor yang memiliki banyak supplier dan customer, dengan harga barang yang bervariasi,\
 harga sebuah barang yang sama dapat berbeda harganya bergantung pada kesepakatan harga. \
