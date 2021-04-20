@@ -18,7 +18,7 @@ front:[
 <div class="s-12 l-1 " id="header">.</div> \
 <div class="s-12 l-10 " id="body" > \
 <div class="s-12 l-12 " id="page1"> \
-<div class="kiri" ><span class="">sismadi</span><span class="orange">.co.id</span></div> \
+<div class="kiri" ><span class="">Sismadi</span><span class="orange">.co.id</span></div> \
 <div class="kanan" ></div> \
 </div> \
 <div class="s-12 l-12 " id="page2"> \
@@ -36,8 +36,8 @@ front:[
 <div class="s-12 l-8 artikel" id="page4-2"></div> \
 </div> \
 <div class="s-12 l-12 " id="page5"> \
-<div class="kiri" >sismadi</div> \
-<div class="kanan" >copyright 2021</div> \
+<div class="kiri" >Sismadi</div> \
+<div class="kanan" >Copyright 2021</div> \
 </div> \
 </div> \
 <div class="s-12 l-1 center" id="body">.</div> \
@@ -53,23 +53,42 @@ Gratis Program Gudang, Inventory, Penjualan dan Akuntansi <br> \
 <div class="s-12 l-8 artikel"><img style="max-width:300px;" class="kanan img" src="responsive.svg" alt="responsive" ></div> \
 </div> \
 <div class="row gading" > \
-<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user.svg" alt="user"><span class="judul">Free</span><br>Paket free stokbarang bisa di download dan digunakan. Maksimal produk yang bisa disimpan adalah 10 item \
-Live Demo download Download Desktop Download without Webserver</div> \
-<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="group.svg" alt="group"><span class="judul">Unlimited</span> <br> Harga Mulai 100.000, Program Komputer siap pakai, tersedia Aplikasi Inventory, Aplikasi Penjualan, Aplikasi Keuangan dan Aplikasi Dagang. \
+<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user.svg" alt="user"><span class="judul">Free</span><br>Paket free stokbarang bisa di download dan digunakan. \
+Maksimal produk yang bisa disimpan adalah 10 item <br>\
++ Live Demo <br>\
++ download<br> \
++ Download Desktop <br>\
++ Download without Webserver</div> \
+<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="group.svg" alt="group"><span class="judul">Unlimited</span> <br> \
+Harga Mulai 100.000, Program Komputer siap pakai, tersedia Aplikasi Inventory, Aplikasi Penjualan, Aplikasi Keuangan dan Aplikasi Dagang. <br>\
 + Order </div> \
-<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user-1.svg" alt="user-1"><span class="judul">Customize</span> <br>Harga Mulai 1.500.000, Program Komputer yang disesuaikan dengan kebutuhan anda. \
-+ Hubungi Kami \
-download \
+<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user-1.svg" alt="user-1"><span class="judul">Customize</span> <br>\
+Harga Mulai 1.500.000, Program Komputer yang disesuaikan dengan kebutuhan anda. <br>\
++ Hubungi Kami<br> \
++ download <br>\
 + Proposal</div> \
 </div>',
 '<span class="judul">News & Events</span><br> \
 Sistem Informasi Dagang Berbasis Web <hr> \
 Kami siap membantu membuat program yang disesuaikan dengan kebutuhan usaha anda.',
-'<span class="judul">Selamat Datang di sismadi.co.id</span><br> \
+'<span class="judul">Selamat Datang di Sismadi.co.id</span><br> \
 Program Toko dan Gudang. <hr>\
 Program stokbarang adalah aplikasi database untuk distributor yang memiliki banyak supplier dan customer, dengan harga barang yang bervariasi,\
-harga sebuah barang yang sama dapat berbeda harganya bergantung pada kesepakatan harga. \
-Dibuat menggunakan PHP  dan MySQL , dengan perintah SQL sehingga mampu menangani transaksi data yang besar. Stokbarang mendukung multi user dan Network.\
+harga sebuah barang yang sama dapat berbeda harganya bergantung pada kesepakatan harga.<br> \
+Dibuat menggunakan PHP  dan MySQL , dengan perintah SQL sehingga mampu menangani transaksi data yang besar. Stokbarang mendukung multi user dan Network.<hr>\
+<div class="s-12 l-6">\
++ Cocok untuk banyak jenis usaha.<br>\
++ Nominal Converter.<br>\
++ Multi User.<br>\
++ Barcode Ready.<br>\
++ Laporan Keuangan Akuntansi Dagang dan Jasa.<br>\
+</div>\
+<div class="s-12 l-6">\
++ Pengingat batas minimal persediaan.<br>\
++ Pengingat barang kadaluarsa.<br>\
++ Export-impor dalam format excel.<br>\
++ Bisa Untuk Kasir.<br>\
+</div>\
 ',
 ],
 
@@ -78,18 +97,19 @@ payment:[
 '\
 <span class="judul">Payment Confirmation Form </span>\
 <hr>\
-Informasi\
-Download aplikasi stokbarang free, Produk yang bisa disimpan palig banyak 10 item. Jika sesuai dengan yang anda butuhkan, anda bisa upgrade ke Paket Unlimited\
+Informasi<br>\
+Download aplikasi stokbarang free, Produk yang bisa disimpan palig banyak 10 item.<br>\
+Jika sesuai dengan yang anda butuhkan, anda bisa upgrade ke Paket Unlimited\
 <hr>\
-1. Lakukan Pembayaran\
-Transfer Pembayaran ke\
-BCA : 628 036 0048 \
-a/n : Wawan Sismadi \
+1. Lakukan Pembayaran <br>\
+Transfer Pembayaran ke<br>\
+BCA : 628 036 0048 <br>\
+a/n : Wawan Sismadi <br>\
 <hr>\
-2. Konfirmasi Pembayaran \
-Kirim SMS ke 087885073737 \
-atau email ke konfirmasi@stokbarang.org \
-dengan menyertakan nama pemilik rekening, email dan nama paket. \
+2. Konfirmasi Pembayaran <br>\
+Kirim SMS ke 087885073737 <br>\
+atau email ke konfirmasi@sismadi.co.id<br> \
+dengan menyertakan nama pemilik rekening, email dan nama paket. <br>\
 Kode aktifasi dikirim melalui email setelah kami terima pembayaran.',
 '\
 <span class="judul">Konfirmasi Pembayaran</span><hr>\
@@ -106,18 +126,19 @@ order:[
 '\
 <span class="judul">Order Paket Unlimited </span>\
 <hr>\
-Informasi \
-Download aplikasi stokbarang free, Produk yang bisa disimpan palig banyak 10 item. Jika sesuai dengan yang anda butuhkan, anda bisa upgrade ke Paket Unlimited \
+Informasi<br> \
+Download aplikasi stokbarang free, Produk yang bisa disimpan palig banyak 10 item.<br>\
+Jika sesuai dengan yang anda butuhkan, anda bisa upgrade ke Paket Unlimited \
 <hr>\
-1. Lakukan Pembayaran \
-Transfer Pembayaran ke \
-BCA : 628 036 0048 \
-a/n : Wawan Sismadi \
+1. Lakukan Pembayaran<br> \
+Transfer Pembayaran ke <br>\
+BCA : 628 036 0048 <br>\
+a/n : Wawan Sismadi <br>\
 <hr>\
-2. Konfirmasi Pembayaran \
-Kirim SMS ke 087885073237 \
-atau email ke sales@stokbarang.org \
-dengan menyertakan nama pemilik rekening, email dan nama paket.\
+2. Konfirmasi Pembayaran <br>\
+Kirim SMS ke 087885073237 <br>\
+atau email ke sales@sismadi.co.id <br>\
+dengan menyertakan nama pemilik rekening, email dan nama paket.<br>\
 Kode aktifasi dikirim melalui email setelah kami terima pembayaran.',
 '\
 <span class="judul">Order Form</span><hr>\
@@ -142,7 +163,7 @@ Jumlah Yang Dibayar *\
 product:[
 '<div class="artikel"><span class="judul2">Product</span></div>',
 '<span class="judul">Paket Free Stokbarang</span><br> \
-Produk yang bisa disimpan maksimal 10 item\
+Produk yang bisa disimpan maksimal 10 item <br>\
 Demo | Download | Manual Book | Video Tutorial |\
 <hr>\
 <span class="judul">Paket Unlimited</span><br>\
@@ -150,13 +171,13 @@ Input data tidak dibatasi\
 Order\
 <hr>\
 <span class="judul">Paket Training</span><br>\
-Training aplikasi Stokbarang.\
-Biaya: Rp75.000/jam/orang.\
-Lama training: minimal 2 jam .\
-Waktu dan tempat: disesuaikan.\
-Peserta: minimal 2 Orang .\
+Training aplikasi Stokbarang.<br>\
+Biaya: Rp75.000/jam/orang.<br>\
+Lama training: minimal 2 jam .<br>\
+Waktu dan tempat: disesuaikan.<br>\
+Peserta: minimal 2 Orang .<br>\
 Modul Training: Buku dan CD aplikasi\
-Contact',
+',
 '\
  \
 <span class="judul">Harga dan Perbandingan Paket</span><br>\
