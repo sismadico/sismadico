@@ -1,46 +1,67 @@
 web={
-front:function(){
-out  ='<div class="s-12 l-1 " id="header">.</div>';
-out +='<div class="s-12 l-10 " id="body" >';
-out +='<div class="s-12 l-12 " id="page1">';
-out +='<div class="kiri" ><span class="">sismadi</span><span class="orange">.co.id</span></div>';
-out +='<div class="kanan" ></div>';
-out +='</div>';
-out +='<div class="s-12 l-12 " id="page2">';
-out +='<ul>';
-out +='<li><a onclick="web.home()"  href="#" >Home</a></li>';
-out +='<li><a onclick="web.product()"  href="#" >Product</a></li>';
-out +='<li><a onclick="web.order()"  href="#" >Order</a></li>';
-out +='<li><a onclick="web.payment()"  href="#" >Payment</a></li>';
-out +='<li><a onclick="web.contact()" href="#" >Contact</a></li>';
-out +='</ul>';
-
-out +='</div>';
-out +='<div class="s-12 l-12 " id="page3">Product</div>';
-out +='<div class="s-12 l-12 " id="page4">content</div>';
-out +='<div class="s-12 l-12 " id="page5">';
-out +='<div class="kiri" >sismadi</div>';
-out +='<div class="kanan" >copyright 2021</div>';
-out +='</div>';
-out +='</div>';
-out +='<div class="s-12 l-1 center" id="body">.</div>';
-document.getElementById('content').innerHTML=out;
+gebi:function(id){
+return document.getElementById(id) ;
 },
-
 web:function(){
-  this.front();
-  this.home();
+web.gebi('content').innerHTML=web.front[0];
+web.setPage(web.home);
 },
-home:function(){
-  arr=[
-'<span class="judul">Free</span><br>Paket free stokbarang bisa di download dan digunakan. Maksimal produk yang bisa disimpan adalah 10 item \
-Live Demo download Download Desktop Download without Webserver',
-'<span class="judul">Unlimited</span> <br> Harga Mulai 100.000, Program Komputer siap pakai, tersedia Aplikasi Inventory, Aplikasi Penjualan, Aplikasi Keuangan dan Aplikasi Dagang. \
-+ Order',
-'<span class="judul">Customize</span> <br>Harga Mulai 1.500.000, Program Komputer yang disesuaikan dengan kebutuhan anda. \
+
+setPage:function(arr){
+web.gebi('page3').innerHTML=arr[0];
+web.gebi('page4-1').innerHTML=arr[1];
+web.gebi('page4-2').innerHTML=arr[2];
+},
+
+front:[
+'\
+<div class="s-12 l-1 " id="header">.</div> \
+<div class="s-12 l-10 " id="body" > \
+<div class="s-12 l-12 " id="page1"> \
+<div class="kiri" ><span class="">sismadi</span><span class="orange">.co.id</span></div> \
+<div class="kanan" ></div> \
+</div> \
+<div class="s-12 l-12 " id="page2"> \
+<ul> \
+<li><a onclick="web.setPage(web.home)"  href="#" >Home</a></li> \
+<li><a onclick="web.setPage(web.product)"  href="#" >Product</a></li> \
+<li><a onclick="web.setPage(web.order)"  href="#" >Order</a></li> \
+<li><a onclick="web.setPage(web.payment)"  href="#" >Payment</a></li> \
+<li><a onclick="web.setPage(web.contact)" href="#" >Contact</a></li> \
+</ul> \
+</div> \
+<div class="s-12 l-12 " id="page3"></div> \
+<div class="s-12 l-12 " id="page4"> \
+<div class="s-12 l-4 artikel" id="page4-1"></div> \
+<div class="s-12 l-8 artikel" id="page4-2"></div> \
+</div> \
+<div class="s-12 l-12 " id="page5"> \
+<div class="kiri" >sismadi</div> \
+<div class="kanan" >copyright 2021</div> \
+</div> \
+</div> \
+<div class="s-12 l-1 center" id="body">.</div> \
+'
+],
+
+home:[
+'<div class="row" > \
+<div class="s-12 l-4 artikel"><span class="judul2">Free Inventory System </span><br> \
+Gratis Program Gudang, Inventory, Penjualan dan Akuntansi <br> \
+<a href="#">download</a> \
+</div> \
+<div class="s-12 l-8 artikel"><img style="max-width:300px;" class="kanan img" src="responsive.svg" alt="responsive" ></div> \
+</div> \
+<div class="row gading" > \
+<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user.svg" alt="user"><span class="judul">Free</span><br>Paket free stokbarang bisa di download dan digunakan. Maksimal produk yang bisa disimpan adalah 10 item \
+Live Demo download Download Desktop Download without Webserver</div> \
+<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="group.svg" alt="group"><span class="judul">Unlimited</span> <br> Harga Mulai 100.000, Program Komputer siap pakai, tersedia Aplikasi Inventory, Aplikasi Penjualan, Aplikasi Keuangan dan Aplikasi Dagang. \
++ Order </div> \
+<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user-1.svg" alt="user-1"><span class="judul">Customize</span> <br>Harga Mulai 1.500.000, Program Komputer yang disesuaikan dengan kebutuhan anda. \
 + Hubungi Kami \
 download \
-+ Proposal',
++ Proposal</div> \
+</div>',
 '<span class="judul">News & Events</span><br> \
 Sistem Informasi Dagang Berbasis Web <hr> \
 Kami siap membantu membuat program yang disesuaikan dengan kebutuhan usaha anda.',
@@ -50,45 +71,251 @@ Program stokbarang adalah aplikasi database untuk distributor yang memiliki bany
 harga sebuah barang yang sama dapat berbeda harganya bergantung pada kesepakatan harga. \
 Dibuat menggunakan PHP  dan MySQL , dengan perintah SQL sehingga mampu menangani transaksi data yang besar. Stokbarang mendukung multi user dan Network.\
 ',
-];
-  out ='<div class="row" >';
-  out +='<div class="s-12 l-4 artikel"><span class="judul2">Free Inventory System </span><br>';
-  out +='Gratis Program Gudang, Inventory, Penjualan dan Akuntansi <br>';
-  out +='<a href="#">download</a>';
-  out +='</div>';
-  out +='<div class="s-12 l-8 artikel"><img style="max-width:300px;" class="kanan img" src="responsive.svg" alt="responsive" ></div>';
-  out +='</div>';
+],
 
-  out +='<div class="row gading" >';
-  out +='<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user.svg" alt="user">'+arr[0]+'</div>';
-  out +='<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="group.svg" alt="group">'+arr[1]+' </div>';
-  out +='<div class="s-12 l-4 artikel" ><img style="max-width:70px;" src="user-1.svg" alt="user-1">'+arr[2]+'</div>';
-  out +='</div>';
+payment:[
+'<div class="artikel"><span class="judul2">Payment</span></div>',
+'\
+<span class="judul">Payment Confirmation Form </span>\
+<hr>\
+Informasi\
+Download aplikasi stokbarang free, Produk yang bisa disimpan palig banyak 10 item. Jika sesuai dengan yang anda butuhkan, anda bisa upgrade ke Paket Unlimited\
+<hr>\
+1. Lakukan Pembayaran\
+Transfer Pembayaran ke\
+BCA : 628 036 0048 \
+a/n : Wawan Sismadi \
+<hr>\
+2. Konfirmasi Pembayaran \
+Kirim SMS ke 087885073737 \
+atau email ke konfirmasi@stokbarang.org \
+dengan menyertakan nama pemilik rekening, email dan nama paket. \
+Kode aktifasi dikirim melalui email setelah kami terima pembayaran.',
+'\
+<span class="judul">Konfirmasi Pembayaran</span><hr>\
+Email *\
+<input type="text">\
+Jumlah Dibayarkan *\
+<input type="text">\
+<input type="submit" value="Submit">\
+'
+],
 
-document.getElementById('page3').innerHTML=out;
-out ='<div class="row" >';
-out +='<div class="s-12 l-4 artikel " >'+arr[3]+'</div>';
-out +='<div class="s-12 l-8 artikel" >'+arr[4]+'</div>';
-out +='</div>';
+order:[
+'<div class="artikel"><span class="judul2">Order</span></div>',
+'\
+<span class="judul">Order Paket Unlimited </span>\
+<hr>\
+Informasi \
+Download aplikasi stokbarang free, Produk yang bisa disimpan palig banyak 10 item. Jika sesuai dengan yang anda butuhkan, anda bisa upgrade ke Paket Unlimited \
+<hr>\
+1. Lakukan Pembayaran \
+Transfer Pembayaran ke \
+BCA : 628 036 0048 \
+a/n : Wawan Sismadi \
+<hr>\
+2. Konfirmasi Pembayaran \
+Kirim SMS ke 087885073237 \
+atau email ke sales@stokbarang.org \
+dengan menyertakan nama pemilik rekening, email dan nama paket.\
+Kode aktifasi dikirim melalui email setelah kami terima pembayaran.',
+'\
+<span class="judul">Order Form</span><hr>\
+Nama *\
+<input type="text">\
+Email *\
+<input type="text">\
+Paket *\
+<input type="text">\
+Inventory\
+<input type="text">\
+Harga\
+<input type="text">\
+Kode Unik\
+<input type="text">\
+Jumlah Yang Dibayar *\
+<input type="text">\
+<input type="submit" value="submit">\
+'
+],
 
-document.getElementById('page4').innerHTML=out;
+product:[
+'<div class="artikel"><span class="judul2">Product</span></div>',
+'<span class="judul">Paket Free Stokbarang</span><br> \
+Produk yang bisa disimpan maksimal 10 item\
+Demo | Download | Manual Book | Video Tutorial |\
+<hr>\
+<span class="judul">Paket Unlimited</span><br>\
+Input data tidak dibatasi\
+Order\
+<hr>\
+<span class="judul">Paket Training</span><br>\
+Training aplikasi Stokbarang.\
+Biaya: Rp75.000/jam/orang.\
+Lama training: minimal 2 jam .\
+Waktu dan tempat: disesuaikan.\
+Peserta: minimal 2 Orang .\
+Modul Training: Buku dan CD aplikasi\
+Contact',
+'\
+ \
+<span class="judul">Harga dan Perbandingan Paket</span><br>\
+Modul Aplikasi yang tersedia pada masing masing Paket .\
+<hr>\
+<table cellspacing="0"> \
+	<tr><th>Details</th>\
+	  <th>Inventory </th>\
+	  <th>Penjualan</th>\
+	  <th>Mini Market </th>\
+	  <th>Akuntansi</th>\
+	</tr>\
+\
+  <td>Harga</td>\
+  <td>Rp.100000 /user</td>\
+  <td>Rp.150000 /user</td>\
+  <td>Rp.200000 /user</td>\
+  <td>Rp.250000 /user</td></tr>\
+<tr>\
+  <td>Lokasi</td>\
+  <td>Ya</td>\
+  <td>Ya</td>\
+  <td>Ya</td>\
+  <td>Ya</td></tr>\
+	<tr class="even">\
+	  <td>Keluar</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Masuk</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+	<tr class="even">\
+	  <td>Laporan Distribusi </td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+	<tr class="even">\
+	  <td>Kontak</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Beli</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Jual</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Tagihan</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Laporan Transaksi </td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+	<tr>\
+	  <td>Kasir</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td>\
+	  <td>Ya</td></tr>\
+	<tr>\
+	  <td>Akun</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Persamaan</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Posting</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Jurnal</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Buku Besar </td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td></tr>\
+\
+	<tr>\
+	  <td>Laporan Keuangan </td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>&nbsp;</td>\
+	  <td>Ya</td></tr>\
+\
+    <tr class="even"><td></td>\
+      <td><input type="submit" value="order"></td>\
+      <td><input type="submit" value="order"></td>\
+      <td><input type="submit" value="order"></td>\
+      <td><input type="submit" value="order"></td></tr>\
+</table>\
+'
+],
 
-},
-product:function(){
-out ='<div class="artikel"><span class="judul2">Product </span></div>';
-document.getElementById('page3').innerHTML=out;
-},
-order:function(){
-  out ='<div class="artikel"><span class="judul2">Order </span></div>';
-  document.getElementById('page3').innerHTML=out;
-},
-payment:function(){
-  out ='<div class="artikel"><span class="judul2">Payment </span></div>';
-  document.getElementById('page3').innerHTML=out;
-},
-contact:function(){
-  out ='<div class="artikel"><span class="judul2">Contact </span></div>';
-  document.getElementById('page3').innerHTML=out;
-},
+contact:[
+'<div class="artikel"><span class="judul2">Contact</span></div>',
+'\
+<span class="judul">Contact Info</span>\n\
+<hr>\
+Wawan Sismadi <br>\
+Phone:087885073237 <br> \
+email: wawan@sismadi.co.id',
+'\
+<span class="judul">Contact Form</span> <br>\
+Jika ada pertanyaan atau informasi lain berhubungan dengan stokbarang, \
+kami siap membantu, bisa hubungi kami melalui telpon, email, messenger atau mengisi form berikut. \
+<hr>\
+Your Name * \
+<input type="text">\
+Your Email *\
+<input type="text">\
+Company Name \
+<input type="text">\
+Subject \
+<input type="text">\
+Message * \
+<input type="text">\
+<input type="submit" value="submit">\
+'
+],
 };
 web.web();
