@@ -12,10 +12,13 @@ body{
 .hide{display: none;}
 .orange{color:#FFA500;}
 .img{width: 100%; height: auto;}
-img{
-  height: 72px;
-  width: 72px;
+.simg svg{
+  height: 70px;
+  width: 70px;
 }
+
+/* style="width:70px; float:left;"  */
+
 
 /*grid*/
 * { box-sizing: border-box; }
