@@ -162,6 +162,7 @@ Contact',
 <span class="judul">Harga dan Perbandingan Paket</span><br>\
 Modul Aplikasi yang tersedia pada masing masing Paket .\
 <hr>\
+<div class="table">\
 <table cellspacing="0"> \
 	<tr><th>Details</th>\
 	  <th>Inventory </th>\
@@ -288,6 +289,7 @@ Modul Aplikasi yang tersedia pada masing masing Paket .\
       <td><input type="submit" value="order"></td>\
       <td><input type="submit" value="order"></td></tr>\
 </table>\
+</div>\
 '
 ],
 
